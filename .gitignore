@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/11th-react-2.code-workspace
+/11th-react-2.mov
