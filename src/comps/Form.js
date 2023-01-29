@@ -22,12 +22,14 @@ export default class Form extends Component {
 		const arr = this.state.employees;
 		arr.push(employeeObj);
 		this.setState({ employees: arr });
+		document.getElementById("form").reset();
 	};
+
 	render() {
 		return (
 			<>
 				<div id="form-container">
-					<form>
+					<form id="form">
 						<label htmlFor="Name">Name: </label>
 						<input id="Name" type="text" name="Name1" onChange={this.changeHandler} placeholder="Enter Your Name..!" value={this.state.Name1} required></input>
 						<br />
